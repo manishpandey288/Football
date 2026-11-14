@@ -1,0 +1,86 @@
+/* App component styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.app > main {
+  flex: 1;
+}
+
+/* Content container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Utility classes */
+.text-accent {
+  color: var(--accent);
+}
+
+.text-secondary {
+  color: var(--text);
+}
+
+.border-top {
+  border-top: 1px solid var(--border);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border);
+}
+
+.border-all {
+  border: 1px solid var(--border);
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.rounded-xl {
+  border-radius: 16px;
+}
+
+.gap-sm {
+  gap: 12px;
+}
+
+.gap-md {
+  gap: 20px;
+}
+
+.gap-lg {
+  gap: 32px;
+}
+
+.p-sm {
+  padding: 12px;
+}
+
+.p-md {
+  padding: 20px;
+}
+
+.p-lg {
+  padding: 32px;
+}
+

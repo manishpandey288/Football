@@ -1,0 +1,123 @@
+:root {
+  /* Dark theme - North Bengal Futsal Cup 2026 */
+  --text: #8e929a;
+  --text-h: #ffffff;
+  --bg: #060608;
+  --bg-secondary: #0f1015;
+  --bg-tertiary: #16171d;
+  --border: rgba(255, 255, 255, 0.07);
+  --code-bg: #16171d;
+  --accent: #ccff00;
+  --accent-rgb: 204, 255, 0;
+  --accent-bg: rgba(204, 255, 0, 0.1);
+  --accent-border: rgba(204, 255, 0, 0.25);
+  --social-bg: rgba(204, 255, 0, 0.05);
+  --color-live: #ff3b30;
+  --color-orange: #ff5e00;
+  --color-blue: #00a2ff;
+  --color-neon-green: #39ff14;
+  --color-dim-text: #50545e;
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --shadow-accent:
+    0px 8px 12px rgba(204, 255, 0, 0.06);
+
+  --sans: 'Geist', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Outfit', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/1.5 var(--sans);
+  letter-spacing: 0.16px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1.36px;
+  @media (max-width: 1024px) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+  color: var(--text);
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
